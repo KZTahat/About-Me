@@ -14,6 +14,12 @@ if(acceptance == 'yes') {
         let favHobby = prompt('Can you guess my favoraite hobby?');
         console.log('Favoraite Hobby: '+ favHobby);
 
+        let city = prompt('which city in jordan do you think I\'m from?');
+        console.log('City: '+city);
+
+        let carType = prompt('What car type do you think I prefer?')
+        console.log('Car Type: '+carType);
+
 
 }else if (acceptance == 'no'){
     alert('Ok, nice to meet you anyway :)');
