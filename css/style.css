@@ -1,0 +1,30 @@
+header{
+    background-color: aquamarine;
+}
+h1{
+    font-size: 50px;
+    font-family: verdana;
+    text-align: center;
+    color: blueviolet;
+}
+h3{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: chocolate;
+    text-align: center;
+}
+img{
+    width: 150px;
+    height: 50xpx;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 550px;
+    border: 1px dashed;
+    border-color: red;
+}
+p{
+    text-align: center;
+    color: crimson;
+    background-color: lightgray;
+}
