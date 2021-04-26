@@ -3,7 +3,10 @@
 alert('Hello there, This is About Me guessing game!');
 alert('I\'m going to ask you five questions about myself and you will try to guess');
 
-let acceptance = prompt('So, are you ready?').toLowerCase();
+let username = prompt('Please inter your name now');
+console.log('User Name: '+username);
+
+let acceptance = prompt('So, are you ready '+username+'? (yes,no)').toLowerCase();
 console.log('acceptance: ' + acceptance);
 
 if (acceptance == 'yes') {
@@ -23,7 +26,7 @@ if (acceptance == 'yes') {
     let footClub = prompt('can you guess the football club I Love most?').toLowerCase();
     console.log('Football Club: ' + footClub);
 
-    let choice = prompt('Ok we are done, do you wish to show your result?').toLowerCase();
+    let choice = prompt('Ok '+username+' we are done, do you wish to show your result? (yes,no)').toLowerCase();
     console.log('Result Choice: ' + choice);
 
     if (choice == 'yes') {
@@ -35,19 +38,19 @@ if (acceptance == 'yes') {
         if (footClub == 'barcalona') { score++ };
         console.log('The Score: ' + score);
 
-        if (score => 4) {
-            alert('Well Done, your score is: ' + score);
+        if (score >= 4) {
+            alert('Well Done '+username+', your score is: ' + score);
         } else if (score == 3) {
-            alert('Nice Try, your score is: ' + score);
+            alert('Nice Try '+username+', your score is: ' + score);
         } else {
-            alert('better luck next time, your score is: ' + score);
+            alert('better luck next time '+username+', your score is: ' + score);
         }
     } else {
-        alert('Ok, thank you for your participation :)');
+        alert('Ok '+username+', thank you for your participation :)');
     }
 
 } else if (acceptance == 'no') {
-    alert('Ok, nice to meet you anyway :)');
+    alert('Ok '+username+', nice to meet you anyway :)');
 } else {
-    alert("please start again and inter 'yes' or 'no' as an answer!");
+    alert('please '+username+', start again and inter \'yes\' or \'no\' as an answer!');
 }
