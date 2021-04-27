@@ -1,9 +1,16 @@
 'use strict';
 
+// Declaring Variables....................
 let numberOFquestions = 7
+let flag1 = false;
+let myFAVnumber = 20;
+let flag2 = false;
+let favAnimals = ['cat', 'snake', 'horse', 'sheep', 'chicken'];
+let score = 0;
+
+// START...
 alert('Hello there, This is About Me guessing game!');
 alert('I\'m going to ask you ' + numberOFquestions + ' questions about myself and you will try to guess');
-
 let username = prompt('Please inter your name now');
 console.log('User Name: ' + username);
 
@@ -30,8 +37,6 @@ if (acceptance == 'yes') {
     // The sixth question: guessing a number with four attempts..................
 
     alert('Now for this part ' + username + ', I will give you 4 attempts to guess my favorite number!');
-    let myFAVnumber = 20;
-    let flag1 = false;
     console.log('FAvorite number: ' + myFAVnumber);
     for (let i = 1; i < 5; i++) {
         let guessedNum = Number(prompt('Here is your attempt number ' + i + ', What is my favorite NUMBER?'));
@@ -57,43 +62,39 @@ if (acceptance == 'yes') {
     // The senenth question: Asking with multiple possible answers...............
 
     alert('It is gitting more exciting now ' + username + ', For this question you have six attempts to guss one of my favorite Animal List');
-    let favAnimals = ['cat', 'snake', 'hourse', 'sheep', 'chicken'];
-    let falg2 = false;
     for (let i = 1; i < 7; i++) {
         let animalGuess = prompt('Here is your attempt number ' + i + ', Guess one animal!').toLowerCase();
         console.log('Animal Guessing ' + i + ': ' + animalGuess);
         for (let j = 0; j < favAnimals.length; j++) {
             if (animalGuess === favAnimals[j]) {
                 alert('Well Done ' + username + ', that\'s right ' + animalGuess + ' is in my list');
-                falg2 = true;
+                flag2 = true;
                 break;
             }
-            if (falg2 == true) {
+            if (flag2 == true) {
                 break;
             }
         }
-        if (falg2 == false) {
-            alert('No that\'s incorrect, try again');
-        } else if (falg2 == true) {
+        if ((i == 6 && flag2 == false) || flag2 == true) {
             break;
+        } else if (flag2 == false) {
+            alert('No that\'s incorrect, try again');
         }
     }
-    if (falg2 == false) {
+    if (flag2 == false) {
         alert('So sorry ' + username + ', you got none right :(');
     }
     alert('my list of favorite animals are: ' + favAnimals[0] + ', ' + favAnimals[1] + ', ' + favAnimals[2] + ', ' + favAnimals[3] + ' and ' + favAnimals[4]);
 
-    for (let i = 1; i < favAnimals.length + 1; i++) {
-        console.log('Animal number ' + i + ' is ' + favAnimals[i]);
+    for (let i = 0; i < favAnimals.length; i++) {
+        console.log('Animal number ' + i + 1 + ' is ' + favAnimals[i]);
     }
 
     // prompting the user to know if he wants to know his result..................
-
     let choice = prompt('Ok ' + username + ' we are done, do you wish to show your result? (yes,no)').toLowerCase();
     console.log('Result Choice: ' + choice);
 
     if (choice == 'yes') {
-        let score = 0;
         if (foodType == 'shawerma') { score++ };
         if (favHobby == 'swimming') { score++ };
         if (city == 'irbid') { score++ };
@@ -101,8 +102,6 @@ if (acceptance == 'yes') {
         if (footClub == 'barcalona') { score++ };
         if (flag1 == true) { score++ };
         if (flag2 == true) { score++ };
-
-        console.log('The Score: ' + score);
 
         if (score >= 6) {
             alert('Well Done ' + username + ', your score is: ' + score + ' out of ' + numberOFquestions);
@@ -114,6 +113,7 @@ if (acceptance == 'yes') {
     } else {
         alert('Ok ' + username + ', thank you for your participation :)');
     }
+    console.log('The Score: ' + score);
 
     // continuing the main IF statement (accept the game or not?)............
 } else if (acceptance == 'no') {
