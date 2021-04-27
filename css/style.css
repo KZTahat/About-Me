@@ -54,6 +54,11 @@ ol li{
     padding: 5px;
     margin: 5px;
     border-radius: 30px;
+    color: springgreen;
+    background-color: tomato;
+}
+ol li:hover{
+    color: darkslategray;
 }
 .firstRow{
     padding-right: 60px;
@@ -67,6 +72,7 @@ ol li{
 #topTen{
     display: block;
     border: 1px solid red;
+    background-color: sienna;
     width: 75%;
     height: auto;
     margin-left: auto;
@@ -77,8 +83,10 @@ ol li{
 
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
-/* p{
+p{
     text-align: center;
-    color: crimson;
-    background-color: lightgray;
-} */
+    color: yellowgreen;
+}
+p:hover{
+    color: deeppink;
+}

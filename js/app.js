@@ -2,7 +2,7 @@
 
 let numberOFquestions = 7
 alert('Hello there, This is About Me guessing game!');
-alert('I\'m going to ask you '+numberOFquestions+' questions about myself and you will try to guess');
+alert('I\'m going to ask you ' + numberOFquestions + ' questions about myself and you will try to guess');
 
 let username = prompt('Please inter your name now');
 console.log('User Name: ' + username);
@@ -32,7 +32,7 @@ if (acceptance == 'yes') {
     alert('Now for this part ' + username + ', I will give you 4 attempts to guess my favorite number!');
     let myFAVnumber = 20;
     let flag1 = false;
-    console.log('FAvorite number: '+myFAVnumber);
+    console.log('FAvorite number: ' + myFAVnumber);
     for (let i = 1; i < 5; i++) {
         let guessedNum = Number(prompt('Here is your attempt number ' + i + ', What is my favorite NUMBER?'));
         if (guessedNum == myFAVnumber) {
@@ -61,7 +61,7 @@ if (acceptance == 'yes') {
     let falg2 = false;
     for (let i = 1; i < 7; i++) {
         let animalGuess = prompt('Here is your attempt number ' + i + ', Guess one animal!').toLowerCase();
-        console.log('Animal Guessing '+i+': '+ animalGuess);
+        console.log('Animal Guessing ' + i + ': ' + animalGuess);
         for (let j = 0; j < favAnimals.length; j++) {
             if (animalGuess === favAnimals[j]) {
                 alert('Well Done ' + username + ', that\'s right ' + animalGuess + ' is in my list');
@@ -74,7 +74,7 @@ if (acceptance == 'yes') {
         }
         if (falg2 == false) {
             alert('No that\'s incorrect, try again');
-        }else if (falg2 == true) {
+        } else if (falg2 == true) {
             break;
         }
     }
@@ -99,13 +99,13 @@ if (acceptance == 'yes') {
         if (city == 'irbid') { score++ };
         if (carType == 'bmw') { score++ };
         if (footClub == 'barcalona') { score++ };
-        if (flag1==true){ score++ };
-        if (flag2==true){ score++ };
+        if (flag1 == true) { score++ };
+        if (flag2 == true) { score++ };
 
         console.log('The Score: ' + score);
 
         if (score >= 6) {
-            alert('Well Done ' + username + ', your score is: ' + score +' out of '+numberOFquestions);
+            alert('Well Done ' + username + ', your score is: ' + score + ' out of ' + numberOFquestions);
         } else if (score == 5) {
             alert('Nice Try ' + username + ', your score is: ' + score);
         } else {
