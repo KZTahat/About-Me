@@ -23,8 +23,62 @@ img{
     border: 1px dashed;
     border-color: red;
 }
-p{
+
+/* The experiance And education Section */
+
+ul li{
+    margin: 0 auto;
+    text-align: left;
+    color: blueviolet;
+}
+
+#experianceAndeducation{
+    display: block;
+    border: 1px solid red;
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+/* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+
+/* The Top Ten ordered list Section */
+ol li{
+    display: inline-block;
+    text-align: center;
+    border: 1px seagreen;
+    border-style: solid solid dotted solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 30px;
+}
+.firstRow{
+    padding-right: 60px;
+    padding-top: 10px;
+}
+.secondRow{
+    padding-right: 60px;
+    padding-top: 10px;
+}
+
+#topTen{
+    display: block;
+    border: 1px solid red;
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+
+/* p{
     text-align: center;
     color: crimson;
     background-color: lightgray;
-}
+} */
