@@ -17,6 +17,7 @@ console.log('User Name: ' + username);
 let acceptance = prompt('So, are you ready ' + username + '? (yes,no)').toLowerCase();
 console.log('acceptance: ' + acceptance);
 
+// The main IF statment checking user's acceptance to the game...
 if (acceptance == 'yes') {
     alert('Ok then, let\'s start...')
     let foodType = prompt('What do you think is my favoraite type of food?').toLowerCase();
@@ -34,8 +35,7 @@ if (acceptance == 'yes') {
     let footClub = prompt('can you guess the football club I Love most?').toLowerCase();
     console.log('Football Club: ' + footClub);
 
-    // The sixth question: guessing a number with four attempts..................
-
+    // The sixth question: guessing a number with four attempts...
     alert('Now for this part ' + username + ', I will give you 4 attempts to guess my favorite number!');
     console.log('FAvorite number: ' + myFAVnumber);
     for (let i = 1; i < 5; i++) {
@@ -59,8 +59,7 @@ if (acceptance == 'yes') {
         alert('Nice Try, The number was: ' + myFAVnumber + '. Better Luck Next Time');
     }
 
-    // The senenth question: Asking with multiple possible answers...............
-
+    // The senenth question: Asking with multiple possible answers...
     alert('It is gitting more exciting now ' + username + ', For this question you have six attempts to guss one of my favorite Animal List');
     for (let i = 1; i < 7; i++) {
         let animalGuess = prompt('Here is your attempt number ' + i + ', Guess one animal!').toLowerCase();
@@ -90,7 +89,7 @@ if (acceptance == 'yes') {
         console.log('Animal number ' + i + 1 + ' is ' + favAnimals[i]);
     }
 
-    // prompting the user to know if he wants to know his result..................
+    // prompting and calculating the score to the user...
     let choice = prompt('Ok ' + username + ' we are done, do you wish to show your result? (yes,no)').toLowerCase();
     console.log('Result Choice: ' + choice);
 
