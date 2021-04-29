@@ -1,92 +1,26 @@
-header{
-    background-color: aquamarine;
-}
-h1{
-    font-size: 50px;
-    font-family: verdana;
-    text-align: center;
-    color: blueviolet;
-}
-h3{
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: chocolate;
-    text-align: center;
-}
-img{
-    width: 150px;
-    height: 50xpx;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 550px;
-    border: 1px dashed;
-    border-color: red;
-}
+body{background-color: blueviolet;}
+header{background-color: aquamarine;}
+h1{font-size: 50px;font-family: verdana;text-align: center;color: blueviolet;}
+h3{font-size: 30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: chocolate;text-align: center;}
+img{width: 150px;height: 50xpx;border-radius: 5px;margin-top: 20px;margin-bottom: 20px;
+    margin-left: 550px;border: 1px dashed;border-color: red;}
 
 /* The experiance And education Section */
+ul li{margin: 0 auto;text-align: left;color: blueviolet;}
+#experianceAndeducation{display: block;border: 1px solid red;width: 75%;height: auto;
+    margin-left: auto;margin-right: auto;background-color: lightgray;margin-bottom: 10px;padding: 10px;}
 
-ul li{
-    margin: 0 auto;
-    text-align: left;
-    color: blueviolet;
-}
-
-#experianceAndeducation{
-    display: block;
-    border: 1px solid red;
-    width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightgray;
-    margin-bottom: 10px;
-    padding: 10px;
-}
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 /* The Top Ten ordered list Section */
-ol li{
-    display: inline-block;
-    text-align: center;
-    border: 1px seagreen;
-    border-style: solid solid dotted solid;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 30px;
-    color: springgreen;
-    background-color: tomato;
-}
-ol li:hover{
-    color: darkslategray;
-}
-.firstRow{
-    padding-right: 60px;
-    padding-top: 10px;
-}
-.secondRow{
-    padding-right: 60px;
-    padding-top: 10px;
-}
-
-#topTen{
-    display: block;
-    border: 1px solid red;
-    background-color: sienna;
-    width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    padding: 10px;
-}
+ol li{display: inline-block;text-align: center;border: 1px seagreen;border-style: solid solid dotted solid;
+    padding: 5px;margin: 5px;border-radius: 30px;color: springgreen;background-color: tomato;}
+ol li:hover{color: darkslategray;}
+.firstRow{padding-right: 60px;padding-top: 10px;}
+.secondRow{padding-right: 60px;padding-top: 10px;}
+#topTen{display: block;border: 1px solid red;background-color: sienna;width: 75%;height: auto;margin-left: auto;margin-right: auto;margin-top: 10px;padding: 10px;}
 
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
-
-p{
-    text-align: center;
-    color: yellowgreen;
-}
-p:hover{
-    color: deeppink;
-}
+p{text-align: center;color: yellowgreen;}
+p:hover{color: deeppink;}
